@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/cust_menu_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <!-- Add your views and widgets here -->
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- player options -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Select your paddle:"
+        android:textColor="#BD8AD6"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/player_option_1_image"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/display_paddle_blue" />
+
+        <ImageView
+            android:id="@+id/player_option_2_image"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/display_paddle_green" />
+
+        <ImageView
+            android:id="@+id/player_option_3_image"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/display_paddle_red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/player_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/player_option_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="Blue"
+                android:textColor="#BD8AD6" />
+
+            <RadioButton
+                android:id="@+id/player_option_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="Green"
+                android:textColor="#BD8AD6" />
+
+            <RadioButton
+                android:id="@+id/player_option_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="Red"
+                android:textColor="#BD8AD6" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!-- Opponent options -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Select opponent:"
+        android:textColor="#F8F2F2"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/opponent_option_1_image"
+            android:src="@drawable/display_paddle_blue"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/opponent_option_2_image"
+            android:src="@drawable/display_paddle_green"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/opponent_option_3_image"
+            android:src="@drawable/display_paddle_red"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/opponent_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/opponent_option_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="Blue"
+                android:textColor="#BD8AD6" />
+
+            <RadioButton
+                android:id="@+id/opponent_option_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="Green"
+                android:textColor="#BD8AD6" />
+
+            <RadioButton
+                android:id="@+id/opponent_option_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="Red"
+                android:textColor="#BD8AD6" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <!-- Opponent speed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Select opponent speed:"
+        android:textColor="#BD8AD6"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/opponent_speed_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="5"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/opponent_speed_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/opponent_speed_value"
+        android:textAlignment="center"
+        android:textColor="#BD8AD6"
+        android:textSize="18sp" />
+
+    <!-- Ball options -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Select Ball:"
+        android:textColor="#BD8AD6"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/ball_option_1_image"
+            android:src="@drawable/display_puck_white"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/ball_option_2_image"
+            android:src="@drawable/display_puck_yellow"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/ball_option_3_image"
+            android:src="@drawable/display_puck_purple"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/ball_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/ball_option_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="White"
+                android:textColor="#BD8AD6" />
+
+            <RadioButton
+                android:id="@+id/ball_option_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="Yellow"
+                android:textColor="#BD8AD6" />
+
+            <RadioButton
+                android:id="@+id/ball_option_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:text="Purple"
+                android:textColor="#BD8AD6" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Select ball speed:"
+        android:textColor="#BD8AD6"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/ball_speed_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="5"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/ball_speed_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/ball_speed_value"
+        android:textAlignment="center"
+        android:textColor="#BD8AD6"
+        android:textSize="18sp" />
+
+    <!-- Background options -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Select background:"
+        android:textColor="#BD8AD6"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/background_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/background_option_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:checked="true"
+            android:fontFamily="@font/audiowide"
+            android:text="Green"
+            android:textColor="#BD8AD6" />
+
+        <RadioButton
+            android:id="@+id/background_option_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFEB3B"
+            android:fontFamily="@font/audiowide"
+            android:text="Yellow"
+            android:textColor="#BD8AD6" />
+
+        <RadioButton
+            android:id="@+id/background_option_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:fontFamily="@font/audiowide"
+            android:text="Red"
+            android:textColor="#BD8AD6" />
+    </RadioGroup>
+
+    <!-- Start game button -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/save_game_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#94459E"
+            android:onClick="startGame"
+            android:text="Save Game"
+            android:textColor="#CCB6D1"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/load_game_button"
+            app:layout_constraintEnd_toStartOf="@+id/load_game_button"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/load_game_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#94459E"
+            android:onClick="startGame"
+            android:text="Load Game"
+            android:textColor="#CCB6D1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/save_game_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#94459E"
+        android:onClick="startGame"
+        android:text="Start Game"
+        android:textColor="#CCB6D1"
+        android:textSize="18sp" />
+</LinearLayout>
+
+
+
+</ScrollView>

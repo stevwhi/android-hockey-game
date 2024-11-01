@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Game Framework</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="mode_ready">Ready?</string>
+    <string name="mode_pause">Pause</string>
+    <string name="mode_lose">Lose</string>
+    <string name="mode_win">Win</string>
+    <string name="score_text">score: 0</string>
+    <string name="menu_start">Start</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_resume">Resume</string>
+    <string name="message_stopped">Stopped</string>
+    <string name="difEasy">easy</string>
+    <string name="difMedium">medium</string>
+    <string name="difHard">hard</string>
+    <string name="difCustom">custom</string>
+    <string name="instructionsBtn_txt">Instructions</string>
+    <string name="highscoreBtn_txt">High Scores</string>
+    <string name="practiceBtn_txt">Practice</string>
+    <string name="playBtn_txt">Play</string>
+    <string name="opponent_speed_value">Opponent speed: %d</string>
+    <string name="ball_speed_value">Ball speed: %d</string>
+    <string name="high_score">High Score: </string>
+    <string name="easy_mode">Easy Mode: </string>
+    <string name="medium_mode">Medium Mode: </string>
+    <string name="hard_mode">Hard Mode: </string>
+    <string name="custom_mode">Custom Mode: </string>
+
+
+</resources>

@@ -1,0 +1,93 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:clickable="false"
+    android:gravity="center"
+    android:soundEffectsEnabled="false">
+
+    <Button
+        android:id="@+id/title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#94459E"
+        android:clickable="false"
+        android:fontFamily="@font/audiowide"
+        android:text="High Scores"
+        android:textColor="#CCB6D1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/medium_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/easy_mode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#39FF14"
+        android:clickable="false"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/easy_mode"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/medium_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/medium_mode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFF33"
+        android:clickable="false"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/medium_mode"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/hard_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easy_mode" />
+
+    <Button
+        android:id="@+id/hard_mode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF3131"
+        android:clickable="false"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/hard_mode"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/custom_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medium_mode" />
+
+    <Button
+        android:id="@+id/custom_mode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1F51FF"
+        android:clickable="false"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/custom_mode"
+        android:textColor="#000000"
+        android:textColorHighlight="#CCB6D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hard_mode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
